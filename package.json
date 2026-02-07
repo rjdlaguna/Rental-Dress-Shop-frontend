@@ -1,0 +1,20 @@
+{
+  "name": "joy-tienzos-dress-shop-frontend",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "vite",
+    "build": "node scripts/optimize-images.mjs && vite build",
+    "optimize-images": "node scripts/optimize-images.mjs",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "vue": "^3.4.21",
+    "vue-router": "^4.3.0"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^5.2.4",
+    "sharp": "^0.34.5",
+    "vite": "^7.3.1"
+  }
+}
