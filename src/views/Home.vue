@@ -1,10 +1,11 @@
 <template>
   <section class="hero fade-in-up" role="banner">
-    <h1>Elegance Tailored for Every Occasion</h1>
+    <header>
+      <h1>Premier Boutique in Tarlac City</h1>
+      <h2>Elegance Tailored for Every Occasion</h2>
+    </header>
     <p>
-      From stunning gown rentals to custom-made designs and professional
-      uniform tailoring, Joy Tienzo's Dress Shop delivers elegance, quality,
-      and perfect fit for every client.
+      Welcome to Joy Tienzo's Dress Shop, your trusted boutique in Tarlac City for stunning gown rentals, custom-made designs, and professional uniform tailoring. Serving the entire Tarlac province with elegance and quality craftsmanship.
     </p>
     <router-link to="/contact" class="btn" aria-label="Book a consultation">Book a Consultation</router-link>
   </section>
@@ -12,113 +13,127 @@
   <section class="fade-in-up">
     <div class="container">
       <div class="features">
-        <div class="card hover-lift">
+        <article class="card hover-lift">
           <h3>Gown Rentals</h3>
           <p>
             Choose from a beautiful collection of gowns perfect for weddings,
             proms, pageants, and special events.
           </p>
-        </div>
-        <div class="card hover-lift">
+        </article>
+        <article class="card hover-lift">
           <h3>Custom Gowns</h3>
           <p>
             Have your dream gown designed and crafted to match your style,
             size, and occasion.
           </p>
-        </div>
-        <div class="card hover-lift">
+        </article>
+        <article class="card hover-lift">
           <h3>Uniform Tailoring</h3>
           <p>
             Professional uniform creation and tailoring for schools,
             businesses, and organizations.
           </p>
-        </div>
+        </article>
       </div>
     </div>
   </section>
 
   <section class="fade-in-up">
     <div class="container">
-      <div class="about">
+      <article class="about">
         <img 
           src="/img/about.png" 
-          alt="Custom tailoring process at Joy Tienzo's Dress Shop"
+          alt="Custom tailoring process at Joy Tienzo's Dress Shop in Tarlac City"
           width="600"
           height="400"
           loading="lazy"
           class="hover-lift"
         />
         <div>
-          <h2>About Joy Tienzo's Dress Shop</h2>
+          <header>
+            <h2>About Your Local Boutique in Tarlac</h2>
+          </header>
           <p>
-            Joy Tienzo's Dress Shop was established with a passion for
-            fashion, craftsmanship, and service excellence. What started as a
-            small tailoring service has grown into a trusted destination for
-            gown rentals, custom designs, and uniform tailoring.
+            Joy Tienzo's Dress Shop is your premier boutique in Tarlac City, established with a passion for fashion, craftsmanship, and service excellence. What started as a small tailoring service has grown into the most trusted destination for gown rentals, custom designs, and uniform tailoring in Tarlac.
           </p>
           <p>
-            Every piece we create or rent is carefully selected and tailored
-            to ensure comfort, quality, and confidence for our clients.
+            Located in Brgy. San Nicolas, Tarlac City, our dress shop serves clients throughout Tarlac Province and beyond. Every piece we create or rent is carefully selected and tailored to ensure comfort, quality, and confidence for our clients throughout the Philippines.
           </p>
         </div>
-      </div>
+      </article>
     </div>
   </section>
 
   <section class="fade-in-up">
     <div class="container">
-      <h2 class="section-title">What Our Clients Say</h2>
+      <header>
+        <h2 class="section-title">What Our Clients Say</h2>
+      </header>
       <div class="features">
-        <div class="card hover-lift">
-          <p>"Thank you, mommy Joy Dela Cruz Tienzo!! THE BEST!"</p>
-          <strong>
-            <a
-              href="https://www.facebook.com/share/p/1C2Witg7CH/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              — Quina P., Wedding Client
-            </a>
-          </strong>
-        </div>
+        <article class="card hover-lift">
+          <blockquote>
+            <p>"Thank you, mommy Joy Dela Cruz Tienzo!! THE BEST!"</p>
+            <footer>
+              <cite>
+                <a
+                  href="https://www.facebook.com/share/p/1C2Witg7CH/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  — Quina P., Wedding Client
+                </a>
+              </cite>
+            </footer>
+          </blockquote>
+        </article>
 
-        <div class="card hover-lift">
-          <p>
-            "Thank you so much sissy Joy Tienzo for these stunning gowns for
-            Nhyca."
-          </p>
-          <strong>
-            <a
-              href="https://www.facebook.com/joyce2212/posts/pfbid0cTU7ZxED266LKE3xj4pq5scfe2wnoz9rHJp5U9LWJL7RKGJ5x2MzJGva8RdaA8n9l?__cft__[0]=AZZT4T1eVbajT-mAm-KUALV7EwA4ChPJ_cAXc9PDakW0EcplQF5--f7PZsIHdNsAScQzVf1Pg93dKBvRC4WDHWh6sCcncKjVcaEksQD3fB79Sw&__tn__=%2CO%2CP-R"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              — Joyce S., Custom Gown
-            </a>
-          </strong>
-        </div>
+        <article class="card hover-lift">
+          <blockquote>
+            <p>
+              "Thank you so much sissy Joy Tienzo for these stunning gowns for
+              Nhyca."
+            </p>
+            <footer>
+              <cite>
+                <a
+                  href="https://www.facebook.com/joyce2212/posts/pfbid0cTU7ZxED266LKE3xj4pq5scfe2wnoz9rHJp5U9LWJL7RKGJ5x2MzJGva8RdaA8n9l?__cft__[0]=AZZT4T1eVbajT-mAm-KUALV7EwA4ChPJ_cAXc9PDakW0EcplQF5--f7PZsIHdNsAScQzVf1Pg93dKBvRC4WDHWh6sCcncKjVcaEksQD3fB79Sw&__tn__=%2CO%2CP-R"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  — Joyce S., Custom Gown
+                </a>
+              </cite>
+            </footer>
+          </blockquote>
+        </article>
 
-        <div class="card hover-lift">
-          <p>
-            "Our school uniforms were delivered on time and with great
-            quality. Highly recommended."
-          </p>
-          <strong>
-            <a href="#" target="_blank" rel="noopener noreferrer">
-              — School Administrator
-            </a>
-          </strong>
-        </div>
+        <article class="card hover-lift">
+          <blockquote>
+            <p>
+              "Our school uniforms were delivered on time and with great
+              quality. Highly recommended."
+            </p>
+            <footer>
+              <cite>
+                <a href="#" target="_blank" rel="noopener noreferrer">
+                  — School Administrator
+                </a>
+              </cite>
+            </footer>
+          </blockquote>
+        </article>
       </div>
     </div>
   </section>
 
   <section class="cta fade-in-up">
-    <h2>Ready to Look Your Best?</h2>
+    <header>
+      <h2>Visit Your Premier Dress Shop in Tarlac City</h2>
+    </header>
     <p>
-      Contact us today and let us help you find or create the perfect outfit.
+      Experience the finest gown rental and custom tailoring services in Tarlac. Contact us today and let us help you find or create the perfect outfit for your special occasion.
     </p>
-    <router-link to="/contact" class="btn btn-primary">Get Started</router-link>
+    <router-link to="/services" class="btn btn-primary">Get Started</router-link>
   </section>
 </template>
 
@@ -261,6 +276,16 @@ export default {
   font-weight: 300;
   position: relative;
   z-index: 1;
+}
+
+.cta p {
+  position: relative;
+  z-index: 1;
+}
+
+.cta .btn {
+  position: relative;
+  z-index: 2;
 }
 
 @media (max-width: 1000px) {

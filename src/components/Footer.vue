@@ -3,7 +3,7 @@
     <div class="footer-content">
       <div class="footer-section">
         <h3>Joy Tienzo's Dress Shop</h3>
-        <p>Elegance Tailored for Every Occasion</p>
+        <p>Premier Boutique in Tarlac City - Elegance Tailored for Every Occasion</p>
         <div class="social-links">
           <a href="https://www.facebook.com/joy.d.c.tienzo" target="_blank" rel="noopener noreferrer" aria-label="Facebook">Facebook</a>
           <a href="#" aria-label="Instagram">Instagram</a>
@@ -21,7 +21,7 @@
       </div>
       
       <div class="footer-section">
-        <h4>Contact</h4>
+        <h4>Visit Our Boutique in Tarlac</h4>
         <p>Brgy. San Nicolas, Tarlac City</p>
         <p>0906-470-7230</p>
         <p>tienzojoy15@gmail.com</p>

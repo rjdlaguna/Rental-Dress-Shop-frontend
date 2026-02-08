@@ -2,9 +2,9 @@
   <header role="banner">
     <div class="header-content">
       <div class="logo">
-        <router-link to="/" class="logo-link" aria-label="Joy Tienzo's Dress Shop - Home">
+        <router-link to="/" class="logo-link" aria-label="Joy Tienzo's Dress Shop - Premier boutique in Tarlac City - Home">
           <span class="logo-text">Joy Tienzo's Dress Shop</span>
-          <span class="tagline">Elegance Tailored for You</span>
+          <span class="tagline">Premier Boutique in Tarlac City</span>
         </router-link>
       </div>
       <nav role="navigation" aria-label="Main navigation">
@@ -47,6 +47,8 @@ header {
   color: white;
   text-decoration: none;
   display: block;
+  pointer-events: auto;
+  cursor: pointer;
 }
 
 .logo .logo-text {
