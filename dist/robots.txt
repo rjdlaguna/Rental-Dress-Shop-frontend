@@ -3,4 +3,4 @@ User-agent: *
 Allow: /
 
 # Sitemap - Update domain when deploying to Hostinger
-Sitemap: https://joytienzosdressshop.com/sitemap.xml
+Sitemap: https://tienzoboutique.shop/sitemap.xml
