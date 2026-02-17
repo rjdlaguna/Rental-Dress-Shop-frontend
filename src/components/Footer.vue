@@ -21,6 +21,17 @@
       </div>
       
       <div class="footer-section">
+        <h4>Navigation</h4>
+        <ul>
+          <li><router-link to="/">Home</router-link></li>
+          <li><router-link to="/services">Services</router-link></li>
+          <li><router-link to="/gallery">Gallery</router-link></li>
+          <li><router-link to="/blog">Blog</router-link></li>
+          <li><router-link to="/contact">Contact</router-link></li>
+        </ul>
+      </div>
+      
+      <div class="footer-section">
         <h4>Visit Our Boutique in Tarlac</h4>
         <p>Brgy. San Nicolas, Tarlac City</p>
         <p>0906-470-7230</p>

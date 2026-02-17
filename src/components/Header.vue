@@ -11,6 +11,7 @@
         <router-link to="/" aria-label="Home page">Home</router-link>
         <router-link to="/services" aria-label="Services page">Services</router-link>
         <router-link to="/gallery" aria-label="Gallery page">Gallery</router-link>
+        <router-link to="/blog" aria-label="Blog page">Blog</router-link>
         <router-link to="/contact" aria-label="Contact page">Contact</router-link>
       </nav>
     </div>

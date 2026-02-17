@@ -3,6 +3,8 @@ import Home from '../views/Home.vue'
 import Services from '../views/Services.vue'
 import Gallery from '../views/Gallery.vue'
 import Contact from '../views/Contact.vue'
+import BlogList from '../views/BlogList.vue'
+import BlogPost from '../views/BlogPost.vue'
 
 const routes = [
   {
@@ -39,6 +41,24 @@ const routes = [
     meta: {
       title: "Contact Us | Joy Tienzo's Dress Shop",
       description: 'Get in touch with Joy Tienzo\'s Dress Shop. Located in Brgy. San Nicolas, Tarlac City. Call 0906-470-7230 or message us on Facebook.'
+    }
+  },
+  {
+    path: '/blog',
+    name: 'BlogList',
+    component: BlogList,
+    meta: {
+      title: "Blog | Joy Tienzo's Dress Shop - Wedding Gown Tips & Trends",
+      description: 'Stay updated with the latest wedding gown trends, styling tips, and expert advice from Joy Tienzo\'s Dress Shop in Tarlac City.'
+    }
+  },
+  {
+    path: '/blog/:slug',
+    name: 'BlogPost',
+    component: BlogPost,
+    meta: {
+      title: "Blog Post | Joy Tienzo's Dress Shop",
+      description: 'Read our latest blog posts about wedding gowns, fashion tips, and dress rental advice.'
     }
   }
 ]
