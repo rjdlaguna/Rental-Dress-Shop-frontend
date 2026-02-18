@@ -5,6 +5,7 @@
         <div class="blog-meta" v-if="post">
           <span class="blog-date">Published: {{ post.date }}</span>
           <span class="blog-category">{{ post.category }}</span>
+          <span class="blog-author">By {{ post.author }}</span>
         </div>
         <h1 class="blog-title" v-if="post">{{ post.title }}</h1>
         <p class="blog-excerpt" v-if="post">
@@ -621,28 +622,34 @@ export default {
       
       const structuredData = {
         "@context": "https://schema.org",
-        "@type": "BlogPosting",
+        "@type": "Article",
         "headline": this.post.title,
         "description": this.post.excerpt,
-        "image": `${SITE_CONFIG.BASE_URL}${this.post.image}`,
-        "datePublished": this.post.date,
-        "dateModified": this.post.date,
-        "author": {
-          "@type": "Organization",
-          "name": this.post.author
+        "image": {
+          "@type": "ImageObject",
+          "url": `${SITE_CONFIG.BASE_URL}${this.post.image}`,
+          "width": 800,
+          "height": 600
         },
+        "datePublished": this.formatDateForSchema(this.post.date),
+        "dateModified": this.formatDateForSchema(this.post.date),
+        "author": this.getAuthorSchema(),
         "publisher": {
           "@type": "Organization",
           "name": "Joy Tienzo's Dress Shop",
           "logo": {
             "@type": "ImageObject",
-            "url": `${SITE_CONFIG.BASE_URL}/img/header.png`
+            "url": `${SITE_CONFIG.BASE_URL}/img/header.png`,
+            "width": 600,
+            "height": 400
           }
         },
         "mainEntityOfPage": {
           "@type": "WebPage",
           "@id": `${SITE_CONFIG.BASE_URL}/blog/${this.post.slug}`
-        }
+        },
+        "articleSection": this.post.category,
+        "keywords": this.getKeywords()
       }
 
       let script = document.querySelector('script[type="application/ld+json"][data-blog-post]')
@@ -653,6 +660,58 @@ export default {
         document.head.appendChild(script)
       }
       script.textContent = JSON.stringify(structuredData)
+    },
+    getAuthorSchema() {
+      if (!this.post) return null
+      
+      // Handle multiple authors (comma-separated or array)
+      const authorNames = this.post.author.includes(',') 
+        ? this.post.author.split(',').map(name => name.trim())
+        : [this.post.author]
+      
+      // If single author, return object; if multiple, return array
+      if (authorNames.length === 1) {
+        return {
+          "@type": "Person",
+          "name": authorNames[0]
+        }
+      } else {
+        return authorNames.map(name => ({
+          "@type": "Person", 
+          "name": name
+        }))
+      }
+    },
+    formatDateForSchema(dateString) {
+      // Convert "February 17, 2026" to "2026-02-17"
+      const months = {
+        'January': '01', 'February': '02', 'March': '03', 'April': '04',
+        'May': '05', 'June': '06', 'July': '07', 'August': '08',
+        'September': '09', 'October': '10', 'November': '11', 'December': '12'
+      }
+      
+      const parts = dateString.split(' ')
+      if (parts.length === 3) {
+        const month = months[parts[0]]
+        const day = parts[1].replace(',', '').padStart(2, '0')
+        const year = parts[2]
+        return `${year}-${month}-${day}`
+      }
+      return dateString
+    },
+    getWordCount() {
+      if (!this.post) return 0
+      const content = document.querySelector('.blog-text')
+      if (content) {
+        return content.innerText.split(/\s+/).filter(word => word.length > 0).length
+      }
+      return 1500 // Estimated word count as fallback
+    },
+    getKeywords() {
+      if (!this.post) return ""
+      const baseKeywords = "gown rental, custom tailoring, dress shop, Tarlac City"
+      const postSpecificKeywords = this.post.title.toLowerCase().split(' ').slice(0, 5).join(', ')
+      return `${baseKeywords}, ${postSpecificKeywords}`
     }
   }
 }
@@ -698,7 +757,8 @@ export default {
 }
 
 .blog-date,
-.blog-category {
+.blog-category,
+.blog-author {
   background: rgba(255, 255, 255, 0.2);
   padding: 8px 16px;
   border-radius: 20px;
