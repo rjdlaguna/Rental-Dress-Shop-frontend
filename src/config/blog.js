@@ -37,7 +37,7 @@ export const blogPosts = [
     category: 'Gown Rental',
     image: '/img/dress1.png',
     imageAlt: 'Affordable elegant gown rental options in Tarlac',
-    author: 'Reyes, Maria',
+    author: 'Madarang, Simone',
     date: 'February 19, 2026',
     readTime: '5 min read',
     published: true
@@ -50,7 +50,7 @@ export const blogPosts = [
     category: 'Debut Planning',
     image: '/img/debutant-gown.png',
     imageAlt: 'Beautiful debut gown styling options',
-    author: 'Reyes, Maria',
+    author: 'Madarang, Simone',
     date: 'February 20, 2026',
     readTime: '4 min read',
     published: true
@@ -63,7 +63,7 @@ export const blogPosts = [
     category: 'Formal Wear',
     image: '/img/barong.png',
     imageAlt: 'Modern barong tagalog styles',
-    author: 'Santos, Carlos',
+    author: 'Mangalino, Kurt',
     date: 'February 21, 2026',
     readTime: '6 min read',
     published: true
@@ -76,7 +76,7 @@ export const blogPosts = [
     category: 'Prom Fashion',
     image: '/img/dress2.png',
     imageAlt: 'Trendy prom dresses for 2026',
-    author: 'Santos, Carlos',
+    author: 'Mangalino, Kurt',
     date: 'February 22, 2026',
     readTime: '5 min read',
     published: true
@@ -89,7 +89,7 @@ export const blogPosts = [
     category: 'Wedding Planning',
     image: '/img/dress3.png',
     imageAlt: 'Bridal accessories collection',
-    author: 'Lim, Angela',
+    author: 'Pintero, Joriz',
     date: 'February 23, 2026',
     readTime: '7 min read',
     published: true
@@ -102,7 +102,7 @@ export const blogPosts = [
     category: 'Dress Care',
     image: '/img/dress4.png',
     imageAlt: 'Gown care and maintenance supplies',
-    author: 'Lim, Angela',
+    author: 'Pintero, Joriz',
     date: 'February 24, 2026',
     readTime: '4 min read',
     published: true
@@ -115,7 +115,7 @@ export const blogPosts = [
     category: 'Fashion Tips',
     image: '/img/dress5.png',
     imageAlt: 'Color theory dress selection guide',
-    author: 'Chavez, Roberto',
+    author: 'Santos, Francis',
     date: 'February 25, 2026',
     readTime: '6 min read',
     published: true
@@ -128,7 +128,7 @@ export const blogPosts = [
     category: 'Sustainable Fashion',
     image: '/img/costume.png',
     imageAlt: 'Sustainable fashion dress rentals',
-    author: 'Chavez, Roberto',
+    author: 'Santos, Francis',
     date: 'February 26, 2026',
     readTime: '5 min read',
     published: true
