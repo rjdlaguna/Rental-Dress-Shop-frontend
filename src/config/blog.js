@@ -132,6 +132,19 @@ export const blogPosts = [
     date: 'February 26, 2026',
     readTime: '5 min read',
     published: true
+  },
+  {
+    id: 'gown-rental-guide',
+    slug: 'gown-rental-guide',
+    title: 'The Ultimate Gown Rental Checklist: How to Find Your Perfect Fit',
+    excerpt: 'Discover the essential gown rental checklist to find your perfect fit. Learn about fabric integrity, hemline rules, and adjustability factors for choosing the ideal gown for weddings, prom, and special events.',
+    category: 'Gown Rental',
+    image: '/img/dress1.png',
+    imageAlt: 'Perfect gown rental fitting guide',
+    author: 'Tienzo, Gabriel',
+    date: 'February 27, 2026',
+    readTime: '6 min read',
+    published: true
   }
   // Add more blog posts here as you create them
   // Example:

@@ -23,7 +23,7 @@
       <div class="container">
         <div class="blog-body">
           <img 
-            v-if="post"
+            v-if="post && post.slug !== 'gown-rental-guide'"
             :src="post.image" 
             :alt="post.imageAlt"
             width="800"
@@ -1541,6 +1541,127 @@
                   Sustainable fashion rentals represent the future of conscious style, offering environmental benefits without sacrificing quality or variety. At Joy Tienzo's Dress Shop in Tarlac, we're committed to leading this transformation through our <router-link to="/services" class="internal-link">rental services</router-link> that combine luxury, sustainability, and local community values. Explore our <router-link to="/gallery" class="internal-link">sustainable collections</router-link> or <router-link to="/contact" class="internal-link">contact us</router-link> to learn how you can make eco-friendly fashion choices.
                 </p>
                 <router-link to="/contact" class="btn btn-primary">Explore Sustainable Rentals</router-link>
+              </div>
+            </template>
+
+            <!-- Gown Rental Guide Content -->
+            <template v-if="post.slug === 'gown-rental-guide'">
+              <h2>Gown Rental Guide: 3 Mistakes to Avoid (Joy Tienzo's Dress Shop)</h2>
+              
+              <!-- YouTube Video Embed -->
+              <div class="video-container">
+                <iframe 
+                  width="700" 
+                  height="394" 
+                  src="https://www.youtube.com/embed/p-ScX7vX28g" 
+                  title="Gown Rental Guide" 
+                  frameborder="0" 
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                  allowfullscreen
+                  class="blog-video"
+                ></iframe>
+              </div>
+
+              <p>
+                Finding the perfect gown for a wedding, prom, or gala is an exciting journey, but it can also be overwhelming. At Joy Tienzo's Dress Shop, we believe that every client deserves a dress that feels like it was made specifically for them—whether it's a custom piece or a rental. Our comprehensive gown rental checklist ensures you make informed decisions that lead to stunning results.
+              </p>
+
+              <h3>Why Quality Matters in Gown Rentals</h3>
+              <p>
+                When renting a gown, many people focus solely on the color or the price. However, the secret to looking your best lies in the structural integrity of the garment. A well-tailored gown should support your silhouette and allow for easy movement throughout your special event. Quality construction ensures comfort, durability, and the confidence that comes from knowing your dress will perform beautifully from the first photo to the final dance.
+              </p>
+
+              <h3>3 Essential Checks Before You Rent</h3>
+              <p>
+                Before committing to a gown rental, perform these critical inspections to ensure you're getting a garment that meets professional standards and will enhance your appearance rather than detract from it.
+              </p>
+
+              <h4>Fabric Integrity: The Foundation of Quality</h4>
+              <p>
+                Check for high-quality stitching and ensure the fabric hasn't been thinned out by excessive cleaning. Run your hands along the seams to feel for loose threads or weakened areas. Hold the fabric up to light to check for thinning or transparency issues. Quality fabric should feel substantial and maintain its structure without being stiff or uncomfortable.
+              </p>
+
+              <h4>The Hemline Rule: Precision in Length</h4>
+              <p>
+                Always bring the shoes you plan to wear. A gown that is too short looks awkward, while one that is too long is a tripping hazard. The perfect hemline should graze the floor or hover just above it, depending on the gown style and your personal preference. Consider the venue—outdoor events may require slightly shorter lengths to prevent snagging on uneven surfaces.
+              </p>
+
+              <h4>Adjustability: The Key to Perfect Fit</h4>
+              <p>
+                Look for gowns with corset backs or generous seam allowances that allow for minor adjustments to fit your specific body type. Adjustable features provide flexibility for weight fluctuations and ensure the gown accentuates your best features. Check for built-in bust support, adjustable straps, and waist ties that can be customized to your measurements.
+              </p>
+
+              <h3>Advanced Gown Selection Techniques</h3>
+              <p>
+                Beyond the basic checks, consider these professional techniques to ensure your gown rental experience exceeds expectations and results in a truly memorable appearance.
+              </p>
+
+              <h4>Color and Lighting Considerations</h4>
+              <p>
+                Test the gown color in different lighting conditions to ensure it complements your skin tone throughout the event. Natural daylight, indoor lighting, and flash photography can all affect how colors appear. Consider the venue's lighting and photography conditions when selecting your gown's color palette.
+              </p>
+
+              <h4>Movement and Comfort Testing</h4>
+              <p>
+                Walk, sit, and move around while wearing the gown to test its comfort and functionality. Practice dancing or the specific movements you'll perform during your event. A gown that restricts movement or causes discomfort will diminish your confidence and enjoyment of the occasion.
+              </p>
+
+              <h4>Accessory Compatibility Assessment</h4>
+              <p>
+                Consider how the gown will work with your planned accessories, including jewelry, shoes, and undergarments. Some gown styles require specific undergarments or work better with particular accessory types. Plan your complete look to ensure all elements harmonize beautifully.
+              </p>
+
+              <h3>Tarlac-Specific Gown Rental Considerations</h3>
+              <p>
+                Our local climate and cultural context influence optimal gown selection for Tarlac events and celebrations.
+              </p>
+
+              <h4>Climate-Appropriate Fabrics</h4>
+              <p>
+                Tarlac's tropical weather requires breathable fabrics that maintain comfort during extended wear. Look for materials that wick moisture and allow air circulation while maintaining their elegant appearance. Consider indoor versus outdoor venues when selecting fabric weights and textures.
+              </p>
+
+              <h4>Cultural Event Adaptations</h4>
+              <p>
+                Filipino celebrations often involve specific cultural elements that influence gown selection. Consider traditional Filipino design elements, modesty requirements for church ceremonies, and the formality level expected at local events. Our <router-link to="/services" class="internal-link">Tarlac boutique</router-link> specializes in gowns that honor local traditions while embracing contemporary fashion.
+              </p>
+
+              <h3>Professional Fitting Benefits</h3>
+              <p>
+                While self-assessment is valuable, professional fitting services provide expertise that elevates your gown rental experience from good to exceptional.
+              </p>
+
+              <h4>Expert Measurement Techniques</h4>
+              <p>
+                Professional tailors use specialized measurement techniques that account for body proportions, posture, and movement patterns. These expert assessments ensure your gown fits perfectly in all positions and maintains its elegant appearance throughout your event.
+              </p>
+
+              <h4>Customization Options</h4>
+              <p>
+                Many rental gowns can be customized with minor alterations that create a personalized fit without compromising the garment's integrity. Professional tailors can adjust lengths, take in seams, and add support elements while maintaining the rental quality standards.
+              </p>
+
+              <h3>Rental Process Best Practices</h3>
+              <p>
+                Follow these professional guidelines to ensure a smooth rental experience and optimal results for your special occasion.
+              </p>
+
+              <h4>Early Booking Strategy</h4>
+              <p>
+                Reserve your gown well in advance to ensure availability and allow time for any necessary adjustments. Early booking also provides flexibility to explore multiple options and make changes if needed without stress or additional costs.
+              </p>
+
+              <h4>Return Preparation</h4>
+              <p>
+                Plan your gown return process to avoid late fees and ensure the garment remains in excellent condition. Follow care instructions carefully and consider professional cleaning services to maintain the gown's quality for future renters.
+              </p>
+
+              <div class="blog-cta-card">
+                <h3>Need a Professional Fitting?</h3>
+                <p>
+                  We invite you to visit our shop in Tarlac City to see our latest collection in person. Our expert tailors are on-site to ensure your chosen gown fits perfectly. Whether you're planning a wedding, debut, prom, or formal event, our <router-link to="/services" class="internal-link">gown rental services</router-link> provide the quality and expertise you deserve. Visit our <router-link to="/gallery" class="internal-link">gallery</router-link> to explore our collection or <router-link to="/contact" class="internal-link">contact us</router-link> to schedule your personalized fitting appointment.
+                </p>
+                <router-link to="/contact" class="btn btn-primary">Schedule Your Fitting</router-link>
               </div>
             </template>
           </div>
