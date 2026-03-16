@@ -5,6 +5,9 @@ import Gallery from '../views/Gallery.vue'
 import Contact from '../views/Contact.vue'
 import BlogList from '../views/BlogList.vue'
 import BlogPost from '../views/BlogPost.vue'
+import Login from '../views/Login.vue'
+import Register from '../views/Register.vue'
+import Dashboard from '../views/Dashboard.vue'
 
 const routes = [
   {
@@ -59,6 +62,40 @@ const routes = [
     meta: {
       title: "Blog Post | Joy Tienzo's Dress Shop",
       description: 'Read our latest blog posts about wedding gowns, fashion tips, and dress rental advice.'
+    }
+  },
+  {
+    path: '/login',
+    name: 'Login',
+    component: Login,
+    meta: {
+      title: "Customer Login | Joy Tienzo's Dress Shop",
+      description: "Login to access your customer account for appointments and orders"
+    }
+  },
+  {
+    path: '/register',
+    name: 'Register',
+    component: Register,
+    meta: {
+      title: "Create Account | Joy Tienzo's Dress Shop",
+      description: "Join our exclusive boutique community and create your customer account"
+    }
+  },
+  {
+    path: '/dashboard',
+    name: 'Dashboard',
+    component: Dashboard,
+    meta: {
+      title: "Dashboard | Joy Tienzo's Dress Shop",
+      description: "Customer dashboard for managing appointments and viewing exclusive collections"
+    },
+    beforeEnter: (to, from, next) => {
+      if (!localStorage.getItem('userToken')) {
+        next('/login')
+      } else {
+        next()
+      }
     }
   }
 ]
