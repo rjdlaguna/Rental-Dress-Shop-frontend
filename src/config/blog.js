@@ -145,6 +145,19 @@ export const blogPosts = [
     date: 'February 27, 2026',
     readTime: '6 min read',
     published: true
+  },
+  {
+    id: 'barong-tuxedo-comparison',
+    slug: 'barong-tuxedo-comparison',
+    title: 'Barong Tagalog or Classic Tuxedo? The Ultimate Wedding Style Guide',
+    excerpt: 'Discover the perfect wedding attire choice between Barong Tagalog and classic tuxedo. Compare comfort, cultural impact, and style options to find your ideal formal wear for Filipino weddings.',
+    category: 'Wedding Attire',
+    image: '/img/barong.png',
+    imageAlt: 'Barong Tagalog vs Classic Tuxedo comparison',
+    author: 'Tienzo, Gabriel',
+    date: 'February 28, 2026',
+    readTime: '7 min read',
+    published: true
   }
   // Add more blog posts here as you create them
   // Example:

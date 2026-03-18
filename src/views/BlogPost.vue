@@ -23,7 +23,7 @@
       <div class="container">
         <div class="blog-body">
           <img 
-            v-if="post && post.slug !== 'gown-rental-guide'"
+            v-if="post && post.slug !== 'gown-rental-guide' && post.slug !== 'barong-tuxedo-comparison'"
             :src="post.image" 
             :alt="post.imageAlt"
             width="800"
@@ -1662,6 +1662,126 @@
                   We invite you to visit our shop in Tarlac City to see our latest collection in person. Our expert tailors are on-site to ensure your chosen gown fits perfectly. Whether you're planning a wedding, debut, prom, or formal event, our <router-link to="/services" class="internal-link">gown rental services</router-link> provide the quality and expertise you deserve. Visit our <router-link to="/gallery" class="internal-link">gallery</router-link> to explore our collection or <router-link to="/contact" class="internal-link">contact us</router-link> to schedule your personalized fitting appointment.
                 </p>
                 <router-link to="/contact" class="btn btn-primary">Schedule Your Fitting</router-link>
+              </div>
+            </template>
+
+            <!-- Barong Tuxedo Comparison Content -->
+            <template v-if="post.slug === 'barong-tuxedo-comparison'">
+              <h2>Barong Tagalog or Classic Tuxedo? The Ultimate Wedding Style Guide</h2>
+              
+              <!-- YouTube Video Embed -->
+              <div class="video-container">
+                <iframe 
+                  width="700" 
+                  height="394" 
+                  src="https://www.youtube.com/embed/GiR4tXMV-4k" 
+                  title="Barong vs Tuxedo Wedding Guide" 
+                  frameborder="0" 
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                  allowfullscreen
+                  class="blog-video"
+                ></iframe>
+              </div>
+
+              <p>
+                Standing at the altar of a traditional Filipino church is a significant milestone. However, choosing between cultural pride and modern sophistication can be a difficult decision for any groom. At Joy Tienzo's Dress Shop, we provide elegant, high-quality attire solutions to help you make the right choice that honors both tradition and personal style.
+              </p>
+
+              <h3>The Case for Barong Tagalog</h3>
+              <p>
+                The Barong Tagalog represents national heritage and identity. It is the gold standard for traditional ceremonies because it is crafted from breathable fabrics like Piña or Jusi, making it the ideal choice for the Philippine heat and cultural context of Filipino weddings.
+              </p>
+
+              <h4>Cultural Heritage and Identity</h4>
+              <p>
+                Wearing a Barong Tagalog connects you to centuries of Filipino tradition and craftsmanship. Each embroidered detail and fabric choice tells a story of cultural pride and family heritage. This traditional attire has evolved through generations while maintaining its symbolic importance in Filipino celebrations.
+              </p>
+
+              <h4>Climate-Appropriate Design</h4>
+              <p>
+                Traditional Barong Tagalog is specifically designed for the Philippine tropical climate. The lightweight, breathable Piña fabric provides comfort during long ceremonies and outdoor celebrations, making it practical for both church services and reception festivities.
+              </p>
+
+              <h3>The Case for Classic Tuxedo</h3>
+              <p>
+                For those aiming for a timeless, international look, the Tuxedo offers unmatched modern sophistication. It provides a sharp, structured silhouette with matching trousers, making it the formal standard for grand evening ballroom or hotel receptions.
+              </p>
+
+              <h4>International Formal Standard</h4>
+              <p>
+                The classic tuxedo represents global formal wear standards that transcend cultural boundaries. Its clean lines and tailored structure create a universally recognized look of elegance and professionalism, perfect for international or destination weddings with diverse guest lists.
+              </p>
+
+              <h3>Comparison at a Glance</h3>
+              <p>
+                Understanding the key differences between these two iconic wedding options helps you make an informed decision that aligns with your venue, personal style, and cultural preferences.
+              </p>
+
+              <h4>Feature-by-Feature Analysis</h4>
+              <ul>
+                <li><strong>Best For Traditional Church & Garden:</strong> Barong Tagalog excels in intimate, cultural ceremonies</li>
+                <li><strong>Best For Evening Ballroom & Hotel:</strong> Classic Tuxedo dominates formal reception settings</li>
+                <li><strong>Comfort Level:</strong> High (Breathable Piña/Jusi) vs Low (Multi-layer Wool/Polyester)</li>
+                <li><strong>Cultural Impact:</strong> National Heritage & Identity vs International Formal Standard</li>
+                <li><strong>Climate Fit:</strong> Ideal for Philippine Heat vs Better for Air-Conditioned Venues</li>
+              </ul>
+
+              <h3>Venue-Specific Recommendations</h3>
+              <p>
+                Your wedding venue plays a crucial role in determining which option will serve you best throughout your special day.
+              </p>
+
+              <h4>Traditional Church Ceremonies</h4>
+              <p>
+                For church weddings in Tarlac, the Barong Tagalog offers the perfect blend of cultural respect and traditional elegance. Its lightweight construction ensures comfort during potentially long ceremonies and standing periods. The intricate embroidery and formal design honor both religious and cultural expectations.
+              </p>
+
+              <h4>Garden and Outdoor Weddings</h4>
+              <p>
+                Both options work well for outdoor settings, but the Barong Tagalog provides superior comfort in the Philippine heat. However, a well-tailored tuxedo can offer better protection against elements and maintain its sharp appearance throughout outdoor celebrations.
+              </p>
+
+              <h4>Evening Ballroom Receptions</h4>
+              <p>
+                For formal evening receptions at hotels or ballrooms, the classic tuxedo creates a more sophisticated silhouette under artificial lighting. Its structured design photographs beautifully and pairs perfectly with formal evening wear expectations.
+              </p>
+
+              <h3>Tarlac-Specific Wedding Considerations</h3>
+              <p>
+                Local climate and cultural traditions influence optimal wedding attire choices for Tarlac celebrations.
+              </p>
+
+              <h4>Climate Adaptation</h4>
+              <p>
+                Tarlac's tropical weather requires breathable, lightweight fabrics that maintain comfort during extended wedding celebrations. Both Barong and tuxedo can be adapted with proper fabric selection and tailoring to ensure comfort throughout your ceremony and reception.
+              </p>
+
+              <h4>Cultural Integration</h4>
+              <p>
+                Filipino weddings often blend traditional elements with modern preferences. Consider your family's cultural expectations alongside your personal style preferences. Our <router-link to="/services" class="internal-link">Tarlac boutique</router-link> specializes in attire that honors local traditions while embracing contemporary fashion trends.
+              </p>
+
+              <h3>Making Your Final Decision</h3>
+              <p>
+                The choice between Barong Tagalog and classic tuxedo ultimately reflects your personal style, cultural values, and wedding vision. Both options offer unique advantages that can enhance your special day when chosen thoughtfully.
+              </p>
+
+              <h4>Personal Style Alignment</h4>
+              <p>
+                Consider your everyday style and comfort preferences. If you rarely wear formal attire, the Barong Tagalog might feel more natural. If you prefer structured, tailored looks, the classic tuxedo may better reflect your personality.
+              </p>
+
+              <h4>Practical Considerations</h4>
+              <p>
+                Think about your wedding timeline, venue logistics, and post-ceremony activities. Choose attire that supports your movement needs and maintains its appearance throughout photography sessions, dancing, and celebration activities.
+              </p>
+
+              <div class="blog-cta-card">
+                <h3>Find Your Perfect Fit in Tarlac City</h3>
+                <p>
+                  Whether you choose a custom-made design or a rental, every piece at our boutique is crafted with precision and care. Visit us at Brgy. San Nicolas, Tarlac City, or message us directly on Facebook for faster responses regarding our wedding packages. Our <router-link to="/services" class="internal-link">wedding attire services</router-link> provide both traditional and modern options to suit your perfect day.
+                </p>
+                <router-link to="/contact" class="btn btn-primary">Schedule Wedding Consultation</router-link>
               </div>
             </template>
           </div>
